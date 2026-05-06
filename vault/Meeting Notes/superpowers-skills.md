@@ -32,6 +32,14 @@
 - **`using-superpowers`** — איך להשתמש בחבילה הזו עצמה.
 - **`writing-skills`** — איך לכתוב סקיל חדש משלך (כולל anthropic-best-practices, persuasion-principles, testing-skills-with-subagents).
 
+## בנוסף: סקילי Obsidian פנימיים
+
+מעבר ל-superpowers, יש שני סקילים פנימיים נוספים תחת `.claude/skills/` שמשרתים את ה-vault:
+
+- **`obsidian-vault-workflow`** — פרוטוקול קריאה/כתיבה ל-vault. ראה [[obsidian-vault-workflow]].
+- **`obsidian-bases`** — יצירה ועריכה של `.base` files (database views ב-Obsidian). יופעל אם נחליט לבנות tabular views של ה-vault.
+- **`obsidian-markdown`** — כתיבת Obsidian Flavored Markdown (wikilinks, embeds, callouts, properties). תמיכה תחבירית למה שכבר עושים בקבצי ה-topic.
+
 ## Open Questions
 
 - אילו מהסקילים נכניס ל-flow קבוע של המנכ"ל-סוכן (ראה [[agents-team-design]])? ההימור הראשוני: `subagent-driven-development` + `dispatching-parallel-agents` + `writing-plans`.

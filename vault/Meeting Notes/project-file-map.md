@@ -41,6 +41,8 @@
 | `writing-plans` | obra/superpowers | [[superpowers-skills]] |
 | `writing-skills` | obra/superpowers | [[superpowers-skills]] |
 | `obsidian-vault-workflow` | פנימי לפרויקט | [[obsidian-vault-workflow]] |
+| `obsidian-bases` | פנימי לפרויקט | [[superpowers-skills]] |
+| `obsidian-markdown` | פנימי לפרויקט | [[superpowers-skills]] |
 
 ## `vault/` — Documentation vault
 

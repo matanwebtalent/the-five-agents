@@ -1,2 +1,8 @@
 .claude/settings.local.json
 .env
+
+# macOS
+.DS_Store
+
+# Obsidian app state (workspace, hot reload, plugin data)
+.obsidian/
