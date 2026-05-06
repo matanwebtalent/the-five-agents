@@ -43,6 +43,7 @@
 | `obsidian-vault-workflow` | פנימי לפרויקט | [[obsidian-vault-workflow]] |
 | `obsidian-bases` | פנימי לפרויקט | [[superpowers-skills]] |
 | `obsidian-markdown` | פנימי לפרויקט | [[superpowers-skills]] |
+| `skill-creator` | anthropics/skills (רשמי) | [[superpowers-skills]] |
 
 ## `vault/` — Documentation vault
 

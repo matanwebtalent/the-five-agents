@@ -40,6 +40,10 @@
 - **`obsidian-bases`** — יצירה ועריכה של `.base` files (database views ב-Obsidian). יופעל אם נחליט לבנות tabular views של ה-vault.
 - **`obsidian-markdown`** — כתיבת Obsidian Flavored Markdown (wikilinks, embeds, callouts, properties). תמיכה תחבירית למה שכבר עושים בקבצי ה-topic.
 
+## בנוסף: `skill-creator` הרשמי של Anthropic
+
+הותקן ב-2026-05-06 מ-[anthropics/skills](https://github.com/anthropics/skills) — סקיל רשמי שעוזר ליצור, לערוך, ולמדוד ביצועים של סקילים. כולל `agents/` ו-`scripts/` ל-evals ו-benchmarks. שימושי כשנרצה לבנות סקילים מותאמים לסוכני הצוות (ראה [[agents-team-design]]).
+
 ## Open Questions
 
 - אילו מהסקילים נכניס ל-flow קבוע של המנכ"ל-סוכן (ראה [[agents-team-design]])? ההימור הראשוני: `subagent-driven-development` + `dispatching-parallel-agents` + `writing-plans`.
@@ -51,4 +55,10 @@
 - **What was done:** clone של `obra/superpowers` ל-`/tmp` והעתקה ב-`rsync --ignore-existing` ל-`.claude/skills/`. 46 קבצים נוספו, 0 נדרסו.
 - **Decisions:** התקנה ידנית בלבד — לא דרך `/plugin` של Claude Code (לא זמין אצל המשתמש).
 - **Notes / Caveats:** אין `commands/` או `agents/` במאגר המקור.
+- **Related:** [[claude-config-structure]], [[agents-team-design]], [[project-file-map]]
+
+### 2026-05-06 — הוספת `skill-creator` הרשמי [shipped]
+- **What was done:** clone של `anthropics/skills` ל-`/tmp` והעתקת `skills/skill-creator/` בלבד אל `.claude/skills/skill-creator/`. 18 קבצים (SKILL.md + agents/ + scripts/ + references/ + assets/ + eval-viewer/ + LICENSE.txt).
+- **Decisions:** ניסיון ראשון היה דרך `claude plugin install` כפי שהמשתמש ביקש, אבל ה-CLI לא ב-PATH; fallback להתקנה ידנית באישור המשתמש. אותו pattern של Superpowers — `rsync --ignore-existing`.
+- **Notes / Caveats:** הסקיל מביא איתו `eval-viewer/` (כנראה React/HTML עם נכסים) ו-`scripts/` להרצת evals — ייבחנו אם נשתמש בהם בעת יצירת סקילים מותאמים.
 - **Related:** [[claude-config-structure]], [[agents-team-design]], [[project-file-map]]
