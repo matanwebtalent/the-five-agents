@@ -11,5 +11,6 @@
 - [[obsidian-vault-workflow]] — הסקיל שמנהל את ה-vault הזה (פרוטוקול קריאה/כתיבה).
 - [[agents-team-design]] — תכנון צוות הסוכנים: מנכ"ל + 4 סוכני משנה.
 - [[ceo-agent]] — מסמך הסוכן הראשי (CEO / מנכ"ל) שמנהל את כל המשימות.
+- [[marketing-team-split]] — פיצול הסוכן השיווקי המאוחד ל-4 סוכנים שטוחים: strategist / writer / copywriter / designer.
 - [[repo-and-github]] — חיבור ל-GitHub, ברנצ'ים, push flow.
 - [[project-file-map]] — מפה של כל קובץ בפרויקט: מה הוא, למי הוא משויך, ולאילו קבצים הוא קשור.
