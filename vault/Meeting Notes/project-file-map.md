@@ -73,7 +73,7 @@
 | `yael/agent.md` | doc (humans) | yael | pointer doc: מסביר היכן ההגדרה הקנונית ואיך להשתמש. לא נטען ע"י Claude Code. | [[yael-rewriter-agent]] |
 | `yael/style-guide.md` | doc | yael (human-maintained) | מדריך הסגנון. יעל קוראת אותו בתחילת סשן ומיישמת. בני אדם מתחזקים. | [[yael-rewriter-agent]] |
 | `yael/reference/` | dir | yael | דוגמאות MD לטקסטים בסגנון שלנו. יעל קוראת 2-3 ראשונים. | [[yael-rewriter-agent]] |
-| `yael/reference/.gitkeep` | placeholder | — | משמר את התיקייה ב-git כשהיא ריקה. | [[yael-rewriter-agent]] |
+| `yael/reference/README.md` | doc (humans) | — | מסביר איך למלא את `yael/reference/`. יעל מדלגת עליו (meta-doc, לא sample סגנון). | [[yael-rewriter-agent]] |
 
 ## Top-level inboxes (Content/, Output/)
 

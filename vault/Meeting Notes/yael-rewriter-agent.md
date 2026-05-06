@@ -38,6 +38,20 @@
 
 ## Session Log
 
+### 2026-05-06 — bootstrap של style-guide + reference README [shipped]
+- **What was done:**
+  - מולא `yael/style-guide.md` עם תוכן ממשי (לא TBD), על בסיס התבוננות בסגנון הכתיבה הקיים בפרויקט עצמו (vault notes, agent files, commit messages). 11 סעיפים: טון, אורך משפט, מבנה פסקה, אוצר מילים מועדף/נמנע, איסורי שפה, hooks/CTAs, מבנה כותרות, עיצוב Markdown, עקרונות-על, הערות.
+  - נוצר `yael/reference/README.md` — מסביר איך למלא את התיקייה (אילו קבצים לדרופ, מה לא, כמה). הוחלף ה-`.gitkeep` שכבר לא נדרש.
+  - עודכן `.claude/agents/yael.md` להורות ליעל לדלג על `README.md` ב-`yael/reference/` (meta-doc, לא sample).
+- **Decisions:**
+  - **style-guide הוא draft שנוצר אוטומטית מסגנון הפרויקט הפנימי** — הוא הקול התיעודי-יבש של הקבצים הקיימים, **לא בהכרח** הקול הרצוי לתוכן שיווקי-חיצוני. סעיפים שטעונים ביקורת/החלפה ראשונה (טון, hooks, CTAs) מסומנים `[DRAFT]`.
+  - **יעל לא קוראת README.md ב-reference/** — הוראה מפורשת ב-Workflow שלה. README הוא meta-doc לבני אדם.
+  - **`yael/reference/` עדיין ריקה מ-samples בפועל** — המשתמש צריך לדרופ 2-3 קבצי תוכן אמיתיים בסגנון הרצוי. עד אז יעל תרוץ ב-fallback ("ללא reference; משכתבת לפי style-guide בלבד").
+- **Notes / Caveats:**
+  - הריצה הראשונה תהיה תקפה רק לתוכן ב-domain של מסמכים פנימיים-תיעודיים. לתוכן שיווקי, יש לעדכן את `[DRAFT]` או להוסיף samples ל-`reference/` לפני הריצה.
+  - לא נוצר test article ב-`Content/` — נשאר באחריות המשתמש להציב מאמר אמיתי לפני הריצה הראשונה.
+- **Related:** [[yuval-creative-agent]], [[ceo-agent]], [[marketing-team-split]]
+
 ### 2026-05-06 — יצירת הסוכנת + פרוטוקול IMAGE_NEEDED ב-CEO [shipped]
 - **What was done:**
   - נוצר `.claude/agents/yael.md` (הגדרה קנונית, frontmatter עם `tools: Read, Write, Edit, Glob, Grep`, גוף בעברית עם זהות / מתי להפעיל / Workflow / Input / Output / איסורים / הערות תפעוליות).
