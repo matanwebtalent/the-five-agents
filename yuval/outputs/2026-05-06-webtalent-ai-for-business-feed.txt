@@ -1,0 +1,25 @@
+A professional lifestyle photograph for an Instagram feed post (1:1 square) by Webtalent — a digital innovation studio — promoting AI services for small and medium businesses. A confident, approachable mid-30s entrepreneur (Mediterranean appearance, dark short hair, light stubble, wearing a clean white t-shirt) sitting at a warm wooden desk in a modern, sun-lit loft-style office, looking directly toward the camera with a slight, genuine smile. On the desk: an open laptop displaying a subtle, elegant AI conversation interface and a small dashboard with gentle bar charts — the screen content is calm and minimal, not busy. Soft, natural side-lighting from a large window casts a warm glow across the scene; gentle window shadows fall on the wall. Background is intentionally styled with vertical wood paneling in cream/off-white, with a framed botanical print partially visible to one side. Composition follows the rule of thirds, the subject placed slightly off-center, with generous breathing room above and below for potential text overlay later. Color palette: warm off-whites, cream, soft beige, and one calm deep-navy-blue accent (around #0F2E5C) appearing on the laptop UI — no electric blue, no purple or magenta gradients, no sci-fi neon, no flat-stock corporate aesthetic. Photorealistic editorial portrait style, shallow depth of field, gentle film-grain texture, subtle warm color grading. Mood: confident, modern, human, grounded — AI as a quiet, helpful tool for real business owners, not a futuristic spectacle. No text overlays in the image. No robot imagery. No glowing brain icons. No floating holographic data. No abstract sci-fi elements.
+
+---
+References used (yuval/reference/):
+- ab_Webtalent03.png → Webtalent brand identity: deep navy blue (#0F2E5C-ish) → light blue gradient; wave-like modern logomark; clean sans-serif typography.
+- a19f57d3-...jpg → Lifestyle editorial portrait of two team members in a warm, sunlit loft with cream wood paneling and framed botanical art. Casual-professional wardrobe (white tee + earthy palm-print shirt). Soft natural light. Mood: approachable, modern, human.
+- d350021f-...jpg → Closer editorial portrait of the same team members on a warm-grey backdrop. Higher contrast, confident eye-contact, monochrome wardrobe (black + white tee). Mood: confident, modern, minimal.
+
+Style elements transferred to this prompt:
+- Lifestyle portrait of a real-looking person (not a robot, not a stock subject).
+- Warm cream / off-white / beige backgrounds with cream wood paneling.
+- Single deep-navy-blue accent (matching Webtalent brand) instead of the usual AI-startup electric blue / magenta gradients.
+- Casual-professional white tee wardrobe.
+- Soft, natural, slightly warm side-lighting.
+- Direct eye contact with camera.
+- Editorial photographic style with shallow DoF.
+
+Style elements deliberately NOT transferred:
+- Did not generate two specific people (the references show real Webtalent team members; we generated a generic "people-of-the-style" subject instead, since GPT-image doesn't reliably reproduce real faces and we shouldn't put the user's actual likeness into a generated image without explicit consent).
+
+Settings used:
+- model: gpt-image-2 (default; falls back to gpt-image-1 if model_not_found)
+- size: 1024x1024
+- quality: medium
+- output_format: png

@@ -25,7 +25,6 @@
 
 ## Open Questions
 
-- **`gpt-image-2` vs `gpt-image-1`** — המשתמש ביקש מפורשות `gpt-image-2`; ב-2026-05 לא בטוח שהמודל זמין בכל החשבונות. אם הקריאה הראשונה תחזיר `model_not_found`, התיקון: לקרוא לסקיל עם `MODEL=gpt-image-1` override (או לעדכן את ברירת המחדל בקובץ הסקיל). תיעוד מלא של ההחלטה כשתתבצע.
 - **Image edit / variations / inpainting** — לא נתמך כרגע. ב-OpenAI יש endpoint נפרד (`/v1/images/edits`). אם תידרש תמיכה — נרחיב את אותו סקיל ולא נכתוב סקיל חדש.
 - **Rate limiting / cost guardrails** — אין כרגע. כל קריאה עולה קרדיטים ב-OpenAI. אם הצוות יתחיל לקרוא בכמויות, נצטרך soft cap (למשל "אסור > N קריאות ביום").
 - **בחירת `output_format`** — כרגע hardcoded ל-`png`. אם נצטרך JPEG/WEBP נוסיף param.
@@ -47,3 +46,12 @@
   - `OPENAI_API_KEY` כבר קיים ב-`.env` (אומת ב-`.env:5`); המשתמש מילא ידנית. ב-`.env.example` יש placeholder ריק.
   - הסקיל לא יודע על קיום `yuval/outputs/` — הקורא אחראי על ה-path.
 - **Related:** [[yuval-creative-agent]], [[env-setup]], [[ceo-agent]], [[project-file-map]], [[claude-config-structure]]
+
+### 2026-05-06 — הרצה ראשונה: gpt-image-2 עובד [shipped]
+- **What was done:** הסקיל הופעל בפעם הראשונה ב-API אמיתי. נוצרה תמונה ראשונה (`yuval/outputs/2026-05-06-webtalent-ai-for-business-feed.png`, 1024x1024, 1.4MB, PNG תקין) ב-~15 שניות. ה-fallback `gpt-image-1` לא הופעל — `gpt-image-2` חזר עם `data[0].b64_json` מלא.
+- **Decisions:** משאירים `gpt-image-2` כ-default. מסירים את ה-Open Question על המודל. ה-fallback ל-`gpt-image-1` נשאר ב-bash code-block כסעד להמשך (חשבונות אחרים, downgrade עתידי).
+- **Notes / Caveats:**
+  - ההפעלה הראשונה רצה **מהסשן הראשי, לא מתוך הסוכן `yuval`** — ראה [[yuval-creative-agent]] לסיבה (ה-Agent tool של הסשן הראשי לא טען את yuval כי הסוכן נוצר אחרי תחילת הסשן). בקריאות הבאות (סשנים חדשים) yuval יקרא לסקיל ישירות כמתוכנן.
+  - ה-`.env` של המשתמש מתחיל את שורת `OPENAI_API_KEY` ברווח מוביל (` OPENAI_API_KEY=sk-...`). bash sourcing התמודד עם זה ללא בעיה — עדיין שווה לתעד שזה לא מצב סטנדרטי.
+  - jq זמין מקומית, ה-Python fallback לא נדרש בהרצה הזו.
+- **Related:** [[yuval-creative-agent]], [[env-setup]]
