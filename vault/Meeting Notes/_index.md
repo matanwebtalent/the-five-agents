@@ -14,3 +14,5 @@
 - [[marketing-team-split]] — פיצול הסוכן השיווקי המאוחד ל-4 סוכנים שטוחים: strategist / writer / copywriter / designer.
 - [[repo-and-github]] — חיבור ל-GitHub, ברנצ'ים, push flow.
 - [[project-file-map]] — מפה של כל קובץ בפרויקט: מה הוא, למי הוא משויך, ולאילו קבצים הוא קשור.
+- [[yuval-creative-agent]] — הסוכן ה-5 בצוות שיווק/תוכן/קריאייטיב; מייצר תמונות בפועל (PNG) דרך OpenAI Images.
+- [[gpt-image-gen-skill]] — הסקיל שעוטף את OpenAI Images API; consumer ראשי = yuval.
