@@ -16,3 +16,4 @@
 - [[project-file-map]] — מפה של כל קובץ בפרויקט: מה הוא, למי הוא משויך, ולאילו קבצים הוא קשור.
 - [[yuval-creative-agent]] — הסוכן ה-5 בצוות שיווק/תוכן/קריאייטיב; מייצר תמונות בפועל (PNG) דרך OpenAI Images.
 - [[gpt-image-gen-skill]] — הסקיל שעוטף את OpenAI Images API; consumer ראשי = yuval.
+- [[chen-research-agent]] — חוקרת רשת. מביאה מקורות אמיתיים מהאינטרנט ושומרת ב-`Content/` כקלט ל-content-writer.
